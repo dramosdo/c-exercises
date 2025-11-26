@@ -25,6 +25,8 @@ int main(void) {
     scanf("%lf", &celsius);
 
     // TODO: call celsius_to_fahrenheit and print the converted value.
+    double celsius_to_fahrenheit(double celsius)
+    return F = C * 1.8 + 32:
 
     return 0;
 }
