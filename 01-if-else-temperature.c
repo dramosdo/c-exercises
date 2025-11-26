@@ -14,13 +14,22 @@
 // - Input: 90  -> Output: "It's hot, stay hydrated."
 // Hint: remember that conditions are checked top to bottom; handle the highest
 // or lowest range first so later checks are not skipped.
-int main(void) {
-    int temperature = 0;
+int main() {
+    int temp = 0;
 
     printf("Enter today's temperature (F): ");
-    scanf("%d", &temperature);
+    scanf("%d", &temp);
 
     // Your if/else statements go below this line.
+    if (temp <= 32) {
+        printf("It is cold outside, wear a jacket!\n");
+    }
+    else if (temp >= 33 && temp <= 75) {
+        printf("Nice weather outside!\n");
+    }
+    else { 
+        printf("It's hot outside!\n");
+    }
 
     return 0;
 }
