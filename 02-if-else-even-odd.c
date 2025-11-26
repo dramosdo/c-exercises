@@ -15,11 +15,24 @@
 // Hint: use the remainder operator % to test divisibility by 2.
 int main(void) {
     int number = 0;
+    
 
     printf("Enter an integer: ");
     scanf("%d", &number);
+    int remainder  = number % 2;
 
     // Add your if/else statements here to print the correct message.
+    if (number == 0){ 
+        printf("Your number is zero!\n");
+    }
+    else if (remainder == 0) {
+        printf("Your number is even!\n");
+    }
+    else {
+        printf("Your number is odd!\n");
+    }
+
+
 
     return 0;
 }
