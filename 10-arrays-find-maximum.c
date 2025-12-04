@@ -22,10 +22,27 @@ int main(void) {
     int values[SIZE];
 
     // TODO: fill the array with user input using a for loop.
+     int x = 0;
+    while (x < SIZE) {
+        printf("Enter number %d: ", x);
+        scanf("%d", &values[x]);
+        x = x + 1
 
     // TODO: find the largest number and its index using another loop.
+        int max_value = values[0];
+    int max_index = 0;
 
+    x = 1;
+    while (x < SIZE) {
+        if (values[x] > max_value) {
+            max_value = values[x];
+            max_index = x;
+        }
+        x = x + 1;
+    }
     // TODO: print the results in a clear sentence.
+    printf("The largest value is: %d at %d\n", max_value, max_index);
 
+    
     return 0;
 }

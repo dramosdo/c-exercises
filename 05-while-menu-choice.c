@@ -22,9 +22,11 @@ int main(void) {
     scanf("%d", &choice);
 
     // TODO: add your while loop to repeat the prompt when choice is not 1-3.
-    while (choice > 3 && choice < 1){
-        printf("You selected the %d choice!", choice);
+    while (choice < 1 || choice > 3){
+        printf("Invalid choice. Please pick 1, 2 or 3:\n ");
+        scanf("%d", &choice);
+        
     }
-
+    printf("You selected choice %d!\n", choice);
     return 0;
 }

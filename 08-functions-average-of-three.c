@@ -15,7 +15,7 @@
 // Hint: return type is double, so divide by 3.0 instead of 3.
 double average_of_three(int a, int b, int c) {
     // TODO: replace this with the correct average calculation.
-    return 0.0;
+
 }
 
 int main(void) {
@@ -27,6 +27,9 @@ int main(void) {
     scanf("%d %d %d", &first, &second, &third);
 
     // TODO: call average_of_three and print the result.
+    int average = average_of_three(first, second, third);
+    int result = (first + second + third) / 3;
+    printf("The average of the three numbers is %d\n", result);
 
     return 0;
 }

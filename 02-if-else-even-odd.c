@@ -22,8 +22,9 @@ int main(void) {
     int remainder  = number % 2;
 
     // Add your if/else statements here to print the correct message.
+    
     if (number == 0){ 
-        printf("Your number is zero!\n");
+        printf("Zero is even!\n");
     }
     else if (remainder == 0) {
         printf("Your number is even!\n");

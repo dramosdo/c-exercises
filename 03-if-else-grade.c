@@ -22,16 +22,16 @@ int main(void) {
     if (score >= 90 && score <= 100){
         printf("Score %d: A!\n", score);
     }
-    else if (score >= 80 && score <= 89) {
+    else if (score >= 80 ) {
         printf("Score %d: B!\n", score);
     }
-    else if (score >= 70 && score <= 79) {
+    else if (score >= 70) {
         printf("Score %d: C!\n", score);
     }
-    else if (score >= 60 && score <= 69) {
+    else if (score >= 60 ) {
         printf("Score %d: D!\n", score);
     }
-    else if (score <= 59) {
+    else {
 
         printf("Score %d: F :(\n", score);
     }

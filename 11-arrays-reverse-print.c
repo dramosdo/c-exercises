@@ -25,10 +25,39 @@ int main(void) {
     int length = 0;
 
     // TODO: ask for length and ensure it is between 1 and MAX_LENGTH.
+    printf("How many numbers would you like? ");
+    scanf("%d", &length);
+
+    if (length < 1 || length > MAX_LENGTH) {
+        printf("Invalid amount\n");
+        return 0;
 
     // TODO: read values into the array using a loop.
+     int x = 0;
+    while (x < length) {
+        printf("The value is %d: ", x + 1);
+        scanf("%d", &data[x]);
+        x = x + 1;
+    }
+
 
     // TODO: print values in original order, then print them in reverse order.
+    printf("You have entered:");
+    x = 0;
+    while (x < length) {
+        printf(" %d", data[x]);
+        x = x + 1;
+    }
+    printf("\n");
+
+    printf("Reverse:");
+    x = length - 1;
+    while (x >= 0) {
+        printf(" %d", data[x]);
+        x = x - 1;
+    }
+    printf("\n");
+
 
     return 0;
 }
